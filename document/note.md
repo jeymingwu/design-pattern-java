@@ -13,7 +13,7 @@
     + 简单工厂：工厂类包含了必要的逻辑判断，根据选择条件动态实例化对象；但扩展时需修改判断逻辑，破坏了“开闭原则”；
     + 工厂方法：定义一个创建对象的接口，让子类决定实例化哪一对象；但扩展时需要修改客户端的代码；
     + 工厂方法模式是简单工厂模式的进一步抽象和推广；
-  
+
 ### 抽象方法模式 Abstract Factory
 + [演示Demo](../src/main/java/factory/abstractfactory/AbstractFactoryExampleClass.java)
 + 提供一个创建一些列相关或相互依赖对象的接口，而无需指定它们具体的类；
@@ -107,7 +107,7 @@ public class Singleton implements Serializable {
   + 设计初期，合理地分层；（如 MVC 三层架构，数据访问层-业务逻辑层-表示层）
   + 开发阶段，子系统因不断重构演化而变得越来越复杂，可增加外观 Facade 提供一个简单接口供外部调用，从而减少依赖；
   + 维护遗留的大型系统，该系统难以维护和拓展但包含十分重要的功能，而新的需求又必须依赖它；可增加 Facade 外观类，来提供设计粗糙或高度复杂的遗留代码的比较清晰简单的接口，让新系统与 Facade 对象交互；
-  
+
 ### 装饰者模式 Decorator
 + [演示Demo1](../src/main/java/decorator/DecoratorTestDemo.java)
 + [演示Demo2-人类穿衣](../src/main/java/decorator/person/DecoratorPersonTestDemo.java)
@@ -169,9 +169,14 @@ public class Singleton implements Serializable {
 + 适用：当一个对象的改变需要同时改变其他对象，而且不知道具体有多少对象需改变；
 + 不足：通知者需要依赖观察者的接口；
 
-### 责任链模式
-+ [演示Demo]()
-+ 
+### 责任链模式 Chain of Responsibility
++ [演示Demo](../src/main/java/chainofresponsibility/ChainOfResponsibilityExampleClass.java)
++ [演示Demo-公司请求申请](../src/main/java/chainofresponsibility/company/Main.java)
++ 使多个对象有机会处理请求，避免请求的发送者与接受者之间的耦合关系；将对象连成一条链，并沿着这条链传递请求，直到有一个对象处理为止；
++ 好处：
+    + 请求者不需指定哪个对象来处理，只需将请求提交；
+    + 职责链简化对象相互的连接，仅需保持一个指向其后继者的引用，而不需保持它所有的候选接收者的引用，大大降低了耦合度；
++ 注意：一个请求可能到达链的末端都得不到处理，或者因为没有正确配置而得不到处理；
 
 ### 备忘录模式 Memento
 + [演示Demo](../src/main/java/memento/MementoExampleClass.java)

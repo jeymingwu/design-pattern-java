@@ -203,7 +203,12 @@ public class Singleton implements Serializable {
 + 提供一种方法顺序访问一个聚合对象中各个元素，而又不暴露该对象的内部表现；
 + 总结：分离了集合对象的遍历行为，抽象出一个迭代器类来负责；可不暴露集合内部结构，又可让外部代码透明地访问集合内部的数据；
 
-### 中介者模式
+### 中介者模式 Mediator
++ [演示Demo](../src/main/java/mediator/MediatorExampleClass.java)
++ 又称：调停者模式
++ 用一个中介对象来封装一系列的对象交互；中介者使各对象不需要显式地互相引用，从而松耦合，而且可独立地改变它们之间的关系；
++ 优点：减少各个需要互相通信对象的耦合度；
++ 缺点：容易误用；
 
 ### 命令模式 Command
 + [演示Demo](../src/main/java/command/CommandExampleClass.java)

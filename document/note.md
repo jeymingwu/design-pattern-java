@@ -124,7 +124,17 @@ public class Singleton implements Serializable {
   + 类适配器模式：通过多重继承对一个接口与另一个接口进行匹配；（不适用于不能多重继承的语言）
   + 对象适配器模式
 
-### 享元模式
+### 享元模式 Flyweight
++ [演示Demo](../src/main/java/flyweight/FlyweightExampleClass.java)
++ [演示Demo-网站分类共享](../src/main/java/flyweight/website/Main.java)
++ 运用共享技术有效地支持大量细粒度的对象；
++ 内部状态与外部状态：
+    + 内部状态：不会随环境改变而改变的共享部分；
+    + 外部状态：随环境改变而改变、不共享的状态；
++ 好处：避免大量细粒度对象，提高系统运行的性能；
++ 适用场景：
+    + 若一个应用程序使用了大量的对象，而大量的对象会造成很大的存储开销时使用；
+    + 对象大多数的情况下可以外部状态，可删除对象的外部状态用相对少的共享对象取代；    
 
 ### 组合模式 Composite
 + [演示Demo](../src/main/java/composite/CompositeExampleClass.java)
@@ -142,8 +152,8 @@ public class Singleton implements Serializable {
 + 组合/聚合复用原则的最佳实现；
 
 ### 代理模式 Proxy
-+ [演示Demo1-送礼物](../src/main/java/proxy/Proxy.java)
-+ [演示Demo2](../src/main/java/proxy/ProxyExampleClass.java)
++ [演示Demo](../src/main/java/proxy/ProxyExampleClass.java)
++ [演示Demo-送礼物](../src/main/java/proxy/Proxy.java)
 + 为其他对象提供一种代理以控制对这个对象的访问；【在访问对象时引入一定程序的间接性（可附加多种用途）】
 + 适用场景：
     + 远程代理：为一个对象在不同的地址空间提供局部代表；可以隐藏一个对象存在于不同地址空间的事实；

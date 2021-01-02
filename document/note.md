@@ -233,7 +233,14 @@ public class Singleton implements Serializable {
 
 ### 访问者模式
 
-### 解释器模式
+### 解释器模式 Interpreter
++ [演示Demo](../src/main/java/interpreter/InterpreterExampleClass.java)
++ [演示Demo-音乐解析器](../src/main/java/interpreter/music/AbstractExpression.java)
++ 给定一个语言，定义它的文法的一种表示，并定一个解释器，来解释语言中的句子；
++ 若一种特定类型的问题发生的频率高，那么可以将该问题的各个势力表述为一个简单语言的句子，构成一个解释器；通过解释器解释句子来解决该问题；
++ 应用场景：正则表达式、网页浏览器（解释HTML）等；
++ 适用场景：当一个语言需要解释执行，并且该语言中的句子可以表示为一个抽象的语法树时；
++ 优点：可容易改变和扩展文法；
 
 ### 状态模式 State
 + [演示Demo](../src/main/java/state/StateExampleClass.java)

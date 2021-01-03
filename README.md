@@ -18,8 +18,8 @@
 
 ## [设计模式-创建型模式](./document/note.md#设计模式-创建型模式)
 
-+ [简单工厂/工厂方法模式](./document/note.md#工厂方法模式-Factory Method)
-+ [抽象工厂模式](./document/note.md#抽象方法模式-Abstract Factory)
++ [简单工厂/工厂方法模式](./document/note.md#工厂方法模式-Factory-Method)
++ [抽象工厂模式](./document/note.md#抽象方法模式-Abstract-Factory)
 + [建造者模式](./document/note.md#建造者模式-Builder)
 + [单例模式](./document/note.md#单例模式-Singleton)
 + [原型模式](./document/note.md#原型模式-Prototype)
@@ -38,7 +38,7 @@
 
 + [策略模式](./document/note.md#策略模式-Strategy)
 + [观察者模式](./document/note.md#观察者模式-Observer)
-+ [责任链模式](./document/note.md#责任链模式-Chain of Responsibility)
++ [责任链模式](./document/note.md#责任链模式-Chain-of-Responsibility)
 + [备忘录模式](./document/note.md#备忘录模式-Memento)
 + [模版方法模式](./document/note.md#模版方法模式-TemplateMethod)
 + [迭代器模式](./document/note.md#迭代器模式-Iterator)

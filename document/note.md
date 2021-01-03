@@ -231,7 +231,16 @@ public class Singleton implements Serializable {
   + 容易新增新的命令，并不影响旧的命令，符合开闭原则；
   + 命令模式将命令的请求和命令的执行分隔开；
 
-### 访问者模式
+### 访问者模式 Visitor
++ [演示Demo](../src/main/java/visitor/VisitorExampleClass.java)
++ [演示Demo-男女行为](../src/main/java/visitor/person/Main.java)
++ 表示一个作用于某对象结构中的各元素的操作；可在不改变各元素的类的前提下定义作用于这元素的新操作；
++ 可实施的前提：
+    + 大白话：对象类型是确定的，而对象的状态是不确认的；
+    + 适用于数据结构相对稳定的系统；
++ 目的：将处理从数据结构中分离出来，解耦合；
++ 优点：容易添加新的操作；
++ 缺点：很困难添加新的数据结构；
 
 ### 解释器模式 Interpreter
 + [演示Demo](../src/main/java/interpreter/InterpreterExampleClass.java)

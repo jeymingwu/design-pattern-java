@@ -19,11 +19,11 @@
 
 ## 接口
 + 普通表示法：
-    + <<interface>> + 接口名
+    + &lt;&lt;interface&gt;&gt; + 接口名
     + 接口方法
 + 普通表示法示例：
 
-| <<interface>> <br> 接口名 | 
+| &lt;&lt;interface&gt;&gt; <br> 接口名 | 
 | ------ |
 | + 方法() |
 
